@@ -45,9 +45,9 @@
         <tr>
             <td><c:out value="${product.id}"/></td>
             <td><c:out value="${product.name}"/></td>
+            <td><c:out value="${product.price}"/></td>
             <td><c:out value="${product.quantity}"/></td>
             <td><c:out value="${product.color}"/></td>
-            <td><c:out value="${product.price}"/></td>
             <td><c:out value="${product.category}"/></td>
             <td>
                 <button style="background: #0c63e4"><a href="/products?action=edit&id=${product.id}" style="color: white"> Edit</a></button>
