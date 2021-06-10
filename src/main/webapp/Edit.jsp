@@ -44,8 +44,6 @@
         <button>Update</button>
         <button><a href="/products">Back</a></button>
     </div>
-
-
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

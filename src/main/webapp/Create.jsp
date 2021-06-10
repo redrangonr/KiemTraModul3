@@ -42,7 +42,7 @@
     </div>
     <div align="left">
         <button>Create</button>
-        <button href="/product"> Back</button>
+        <button><a href="/products">Back</a></button>
     </div>
 
 </form>
