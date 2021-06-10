@@ -85,12 +85,13 @@ public boolean update(int id , Product product){
     int rowUpdate =0;
     try {
         PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PRODUCT_BY_ID);
-        preparedStatement.setInt(1, id);
-        preparedStatement.setString(2, product.getName());
-        preparedStatement.setDouble(3, product.getPrice());
-        preparedStatement.setInt(4, product.getQuantity());
-        preparedStatement.setString(5, product.getColor());
-        preparedStatement.setString(6, product.getCategory());
+
+        preparedStatement.setString(1, product.getName());
+        preparedStatement.setDouble(2, product.getPrice());
+        preparedStatement.setInt(3, product.getQuantity());
+        preparedStatement.setString(4, product.getColor());
+        preparedStatement.setString(5, product.getCategory());
+        preparedStatement.setInt(6, id);
         rowUpdate = preparedStatement.executeUpdate();
     } catch (SQLException throwables) {
         throwables.printStackTrace();
